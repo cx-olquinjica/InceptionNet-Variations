@@ -8,6 +8,33 @@ __They include the following__:
 * [Use label smoothing for model regularization](https://arxiv.org/abs/1512.00567)
 * [Make further adjustments to the Inception block by adding residual connection](https://arxiv.org/abs/1602.07261)
 
+## Run 
+### Using config files
+Modify the configurations in `.json` config files, then run:
+
+  ```
+  python train.py --config config.json
+  ```
+
+### Resuming from checkpoints
+You can resume from a previously saved checkpoint by:
+
+  ```
+  python train.py --resume path/to/checkpoint
+  ```
+
+### Using Multiple GPU
+You can enable multi-GPU training by setting `n_gpu` argument of the config file to larger number.
+If configured to use smaller number of gpu than available, first n devices will be used by default.
+Specify indices of available GPUs by cuda environmental variable.
+  ```
+  python train.py --device 2,3 -c config.json
+  ```
+  This is equivalent to
+  ```
+  CUDA_VISIBLE_DEVICES=2,3 python train.py -c config.py
+  ```
+
 
 ## Citations
 
