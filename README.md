@@ -7,3 +7,39 @@ __They include the following__:
 * [Make adjustments to the Inception block (width, choice and order of convolutions)](https://arxiv.org/abs/1512.00567)
 * [Use label smoothing for model regularization](https://arxiv.org/abs/1512.00567)
 * [Make further adjustments to the Inception block by adding residual connection](https://arxiv.org/abs/1602.07261)
+
+
+## Citations
+
+```bibtex
+@misc{ioffe2015batch,
+      title={Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift}, 
+      author={Sergey Ioffe and Christian Szegedy},
+      year={2015},
+      eprint={1502.03167},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
+
+```bibtex
+@misc{szegedy2015rethinking,
+      title={Rethinking the Inception Architecture for Computer Vision}, 
+      author={Christian Szegedy and Vincent Vanhoucke and Sergey Ioffe and Jonathon Shlens and Zbigniew Wojna},
+      year={2015},
+      eprint={1512.00567},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
+```bibtex
+@misc{szegedy2016inceptionv4,
+      title={Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning}, 
+      author={Christian Szegedy and Sergey Ioffe and Vincent Vanhoucke and Alex Alemi},
+      year={2016},
+      eprint={1602.07261},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
